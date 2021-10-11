@@ -1,42 +1,44 @@
-// Domanda quanti km si devono percorrere
+// VARIABILI
 
+// Domanda quanti km si devono percorrere
 const journey = Number (prompt ("Quanti km desidera percorrere?"))
-/* console.log(journey); */
 
 // Domanda l'età
-
 const user_age = Number (prompt ("Quanti anni ha?"))
-/* console.log(user_age); */
 
 // Prezzo base biglietto
-
 const price_km = 0.21
 
-
-// Calcola costo biglietto
-
+// Costo biglietto assoluto
 const price_ticket = price_km * journey
-/* console.log(price_ticket); */
 
+// Costo biglietto relativo
 let price_your_ticket
 
-   // Se età < 18 applica 20% sconto
-   if (user_age < 18) {
-        price_your_ticket = price_ticket * 0.8
-   }
 
-   // Se età > 65 applica 40% sconto
-   else if (user_age > 65) {
-        price_your_ticket = price_ticket * 0.6
-   }
+// CONDIZIONI DETERMINANTI
 
-   // Altrimenti prezzo intero
+if (user_age < 18) {  // Se età < 18 applica 20% sconto
+    price_your_ticket = price_ticket * 0.8
+}else if (user_age > 65) {  // Se età > 65 applica 40% sconto
+    price_your_ticket = price_ticket * 0.6
+}else {  // Altrimenti prezzo intero
+    price_your_ticket = price_ticket
+}   
 
-    else {
-        price_your_ticket = price_km *      journey
-    }
-/* console.log(price_your_ticket); */ 
+
+//  RISULTATO
 
 // Mostra prezzo corrispondente
 
 document.getElementById("your_ticket").innerHTML = `€ ${price_your_ticket.toFixed(2)}`
+
+
+//  UTILITA'
+
+// console.log utilizzati in fase di programmazione
+
+/* console.log(journey); */
+/* console.log(user_age); */
+/* console.log(price_ticket); */
+/* console.log(price_your_ticket); */ 
