@@ -18,12 +18,21 @@ const price_km = 0.21
 const price_ticket = price_km * journey
 console.log(price_ticket);
 
+let price_your_ticket
+
    // Se età < 18 applica 20% sconto
    if (user_age < 18) {
-    price_your_ticket = price_ticket * 0.8
+        price_your_ticket = price_ticket * 0.8
    }
 
-   // Se invece età > 65 applica 40% sconto
+   // Se età > 65 applica 40% sconto
+   else if (user_age > 65) {
+        price_your_ticket = price_ticket * 0.6
+   }
 
+   // Altrimenti prezzo intero
 
+    else {
+        price_your_ticket = price_km *      journey
+    }
 console.log(price_your_ticket);   
