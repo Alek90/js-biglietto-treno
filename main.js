@@ -1,14 +1,14 @@
 // Domanda quanti km si devono percorrere
 
 const journey = Number (prompt ("Quanti km desidera percorrere?"))
-console.log(journey);
+/* console.log(journey); */
 
 // Domanda l'età
 
 const user_age = Number (prompt ("Quanti anni ha?"))
-console.log(user_age);
+/* console.log(user_age); */
 
-// Prezzo base
+// Prezzo base biglietto
 
 const price_km = 0.21
 
@@ -16,7 +16,7 @@ const price_km = 0.21
 // Calcola costo biglietto
 
 const price_ticket = price_km * journey
-console.log(price_ticket);
+/* console.log(price_ticket); */
 
 let price_your_ticket
 
@@ -35,7 +35,7 @@ let price_your_ticket
     else {
         price_your_ticket = price_km *      journey
     }
-console.log(price_your_ticket); 
+/* console.log(price_your_ticket); */ 
 
 // Mostra prezzo corrispondente
 
