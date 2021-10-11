@@ -39,4 +39,4 @@ console.log(price_your_ticket);
 
 // Mostra prezzo corrispondente
 
-document.getElementById("your_ticket").innerHTML = price_your_ticket.toFixed(2)
+document.getElementById("your_ticket").innerHTML = `€ ${price_your_ticket.toFixed(2)}`
