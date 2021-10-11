@@ -35,4 +35,8 @@ let price_your_ticket
     else {
         price_your_ticket = price_km *      journey
     }
-console.log(price_your_ticket);   
+console.log(price_your_ticket); 
+
+// Mostra prezzo corrispondente
+
+document.getElementById("your_ticket").innerHTML = price_your_ticket.toFixed(2)
